@@ -1,6 +1,7 @@
 const gradeGenerator = () => {
   let grade = "Invalid Input";
   let marks = prompt("Please enter student marks: ");
+  //Conditional statements to execute a block of code based on the student marks
   if (marks) {
     marks = parseFloat(marks);
     if (!isNaN(marks)) {
@@ -17,6 +18,7 @@ const gradeGenerator = () => {
       }
     }
   } else {
+    //document.getElementById() allows us to display results on the browser
     document.getElementById("challenge1").textContent =
       "No student marks entered!!";
     return;
@@ -24,4 +26,6 @@ const gradeGenerator = () => {
   document.getElementById("challenge1").textContent = `Grade: ${grade}`;
   return grade;
 };
+
+//Function call
 gradeGenerator();
