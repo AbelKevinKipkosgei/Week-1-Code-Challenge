@@ -1,7 +1,8 @@
 const speedDetector = () => {
   let extraSpeed = 0;
   let points = 0;
-  let speed = prompt("Please enter speed in km/h: ");
+  let speed = prompt("Please enter speed in km/h: ");//Displays an input for user to key in a value
+  //Conditional Statements to execute a block of code based on the speed
   if (speed) {
     speed = parseFloat(speed);
     if (!isNaN(speed)) {
@@ -32,4 +33,5 @@ const speedDetector = () => {
   return points;
 };
 
+//Function call
 speedDetector();
