@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge 3: Net Salary Calculator</title>
+  </head>
+  <body>
+    <h2>Challenge 3: Net Salary Calculator</h2>
+    <form>
+      <label for="basicsalary">Basic Salary(Kshs): </label>
+      <input type="number" id="basicsalary" name="basicsalary" />
+      <br />
+      <br />
+      <label for="benefits">Benefits(Kshs): </label>
+      <input type="number" id="benefits" name="benefits" />
+      <br />
+      <br />
+      <button type="button" onclick="netSalaryCalculator()">Calculate</button>
+    </form>
+    <div id="results">
+      <p id="payee">P.A.Y.E. (Tax):</p>
+      <p id="nhif">N.H.I.F. Deductions:</p>
+      <p id="nssf">N.S.S.F. Deductions:</p>
+      <p id="grosssalary">Gross Salary:</p>
+      <p id="netsalary">Net Salary:</p>
+    </div>
+    <script src="./Challenge 3: Net Salary Calculator.js"></script>
+  </body>
+</html>
